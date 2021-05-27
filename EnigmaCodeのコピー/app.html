@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "ja">
+    <head>
+        <meta charset = "utf-8">
+        <title>エニグマ暗号機</title>
+        <meta name = "keywords" content = "エニグマ,エニグマ暗号,暗号,暗号機,暗号復号,暗号化,enigma,eniguma">
+        <link rel = "stylesheet" href = "app.css">
+        <script src ="click/click.js"></script>
+        <script src = "app.js"></script>
+    </head>
+
+    <body>
+        <div>
+            <h1>エニグマ暗号</h1>
+            <h2>暗号文</h2>
+            <textarea name = "暗号文" id="message"></textarea>
+            <br>
+            <h2>暗証コード</h2>
+            <input type = "text" id = "code" value="">
+            <button class ="btn" onclick = "copyToClipboard()">
+                <img src = "click/clippy.svg" alt = "Copy to clipboard">
+            </button>
+            <br>
+            <button class = "button" onclick = "Encrypt()">暗号化</button> <button class = "button" onclick = "Decrypt()">復号化</button>
+            <br>
+            <h2>実行結果</h2>
+            <textarea id="answer"></textarea>
+            <button class = "btn" onclick = "cutToClipboard()">本文をコピー</button>
+        </div>
+    </body>
+    <br><br>
+
+    <footer id = "footer1" class = "footer outer-block">
+        <div class = "logo">
+        </div>
+        <p class = "copyright">
+            COPYRIGHT ©︎ HACO Inc. 
+        </p>
+    </footer>
+</html>
